@@ -1,0 +1,537 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: black
+	color: #fff
+
+.header
+	background-color: #2980b9
+	color: #fff
+	font-family: $RobotoLight
+	width: 100%
+	padding: 0 50px
+
+.header__logo
+	display: inline-block
+
+.header__nav
+	display: inline-block
+	width: 50%
+
+.header__list
+	text-align: center
+
+.list-item
+	display: inline-block
+	width: 20%
+	text-align: center
+
+.list-item__link
+	color: #fff
+	&:hover
+		color: #fff
+		text-decoration: none
+		border: none
+	&:active
+		color: #fff
+		text-decoration: none
+		border: none
+	&:visited
+		color: #fff
+		text-decoration: none
+		border: none
+
+.arrow-list
+	&:after
+		content: " "
+		display: inline-block
+		width: 15px
+		height: 15px
+		top: 2px
+		left: 25px
+		position: relative
+		background: url("../img/icons/arrow.svg") no-repeat center
+
+.header__phone
+	display: inline-block
+	width: 25%
+	text-align: right
+
+.number
+	font-family: $RobotoMedium
+	font-size: 16px
+	&:before
+		content: ""
+		display: inline-block
+		position: relative
+		top: 6px
+		right: 7px
+		width: 25px
+		height: 25px
+		background: url('../img/icons/phone.svg') no-repeat center
+
+.header__facebook
+	border: 1px solid #8dbbda
+	border-radius: 50%
+	display: inline-block
+	height: 40px
+	width: 40px
+	float: right
+	margin-top: 12px
+
+.header__facebook img
+	position: relative
+	top: 5px
+	left: 12px
+
+.slider-wrapper
+	font-family: $RobotoLight
+
+.slider
+	background: url('../img/slider-image.jpg') no-repeat center
+	color: #fff
+	min-height: 600px
+	background-size: cover
+	position: relative
+	&::after
+	 	content: ''
+	  position: absolute
+	  top: 0
+	  left: 0
+	  right: 0
+	  bottom: 0
+	  background-color: rgba(0,0,0,0.6)
+
+
+.slider__content
+	margin-left: 180px
+	padding-top: 145px
+
+.slider__heading
+	width: 700px
+	margin: 0
+	font-family: $RobotoLight
+	font-size: 42px
+	position: relative
+	z-index: 2
+
+.slider__text
+	width: 450px
+	font-size: 18px
+	position: relative
+	z-index: 2
+
+.slider__button
+	font-family: $RobotoRegular
+	border: none
+	background-color: #e67e22
+	padding: 16px 65px
+	border-radius: 35px
+	font-size: 18px
+	outline: none
+	margin-top: 20px
+	position: relative
+	z-index: 2
+
+.owl-next
+	position: absolute
+	right: 0
+	bottom: 0
+	width: 50px
+	background-color: #d35400
+	opacity: 0.7
+	height: 600px
+	&::after
+		clear: both
+
+.owl-next img
+	margin-top: 270px
+	margin-left: 15px
+
+
+
+.content
+	color: #000
+	font-family: $RobotoRegular
+
+.about
+	padding-left: 100px
+
+.about__header
+	font-family: $RobotoMedium
+	padding-left: 70px
+	font-size: 30px
+	&::before
+		content: ""
+		position: relative
+		bottom: 7px
+		right: 15px
+		display: inline-block
+		width: 25px
+		height: 2px
+		background-color: #b8b8b8
+
+.about__text
+	padding-left: 55px
+	display: inline-block
+	width: 75%
+
+.about__text_blue
+	color: #3498db
+	border-bottom: 1px solid #c2e0f4
+	&:hover
+		color: #e67e22
+		border: none
+		text-decoration: none
+
+.subscription
+	padding-left: 170px
+
+.subscription__heading
+	font-size: 30px
+	&::before
+		content: ""
+		position: relative
+		bottom: 7px
+		right: 15px
+		display: inline-block
+		width: 25px
+		height: 2px
+		background-color: #b8b8b8
+
+.name-form
+	width: 35%
+	display: inline-block
+	margin-left: -15px
+
+.name-form__text
+	font-family: $RobotoMedium
+	font-size: 16px
+
+.name-form__input
+	padding: 15px 10px
+	width: 370px
+	outline: none
+
+.phone-form
+	width: 35%
+	display: inline-block
+
+.phone-form__text
+	font-family: $RobotoMedium
+	font-size: 16px
+
+.phone-form__input
+	padding: 15px 10px
+	width: 370px
+	outline: none
+
+.duration-form
+	width: 35%
+	display: inline-block
+	margin-left: -15px
+
+.duration-form__text
+	font-family: $RobotoMedium
+	font-size: 16px
+
+.duration-form__rangecontainer
+	width: 370px
+	position: relative
+
+.duration-form__rangecontainer_top-value
+	position: absolute
+	top: -14px
+	font-size: 12px
+
+/* The slider itself */
+.range-slider
+	-webkit-appearance: none
+	appearance: none
+	width: 100%
+	height: 9px
+	outline: none
+	border: 1px solid #bebebe
+	border-radius: 10px
+  outline: none
+  opacity: 0.7
+  -webkit-transition: .2s
+  transition: opacity .2s
+
+/* Mouse-over effects */
+.range-slider
+	&:hover
+    opacity: 1
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.range-slider
+::-webkit-slider-thumb
+  -webkit-appearance: none
+  appearance: none
+  width: 25px
+  height: 25px
+  background: url('../img/icons/thumb.png') no-repeat center
+  cursor: pointer
+
+.range-slider
+::-moz-range-thumb
+  width: 25px
+  height: 25px
+  background: url('../img/icons/thumb.png') no-repeat center
+  cursor: pointer
+
+.genre-form
+	display: inline-block
+	width: 35%
+
+.genre-form__text
+	font-family: $RobotoMedium
+	font-size: 16px
+
+.wrapper
+  width: 370px
+
+/* remove the default select arrow for IE10 and up */
+select
+	&::-ms-expand
+  	display: none
+
+select
+	/* remove the default select arrow for non-IE browsers */
+	-webkit-appearance: none
+	-moz-appearance: none
+	-o-appearance: none
+	appearance: none
+	padding: 0 28px 0 12px
+	width: 370px
+	height: 50px
+
+	/* custom arrow set as a background */
+	background: url('../img/icons/select.svg') no-repeat 95% 50%
+	box-sizing: border-box
+	border: 1px solid #bebebe
+	border-radius: 2px
+	outline: none
+	cursor: pointer
+	color: #000
+	line-height: 16px
+	text-indent: 0.01px
+  text-overflow: ''
+	font-family: $RobotoRegular
+
+
+.common-count
+	display: inline-block
+	width: 35%
+	margin-left: -15px
+
+.common-count__text
+	font-family: $RobotoLight
+	font-size: 20px
+	margin: 0
+
+.common-count__text_result
+	font-size: 30px
+	color: #3498db
+
+.registration
+	display: inline-block
+	width: 30%
+	margin-top: 60px
+	margin-left: 16px
+
+.registration__button
+	font-family: $RobotoRegular
+	border: none
+	float: right
+	background-color: #e67e22
+	padding: 16px 65px
+	border-radius: 35px
+	font-size: 18px
+	outline: none
+	color: #fff
+	&:hover
+		color: #fff
+		text-decoration: none
+	&:focus
+		color: #fff
+		text-decoration: none
+
+.checkbox-wrapper__checkbox-label
+	display: block
+	margin-top: 60px
+	margin-left: -15px
+	position: relative
+	padding-left: 35px
+	margin-bottom: 12px
+	cursor: pointer
+	font-size: 14px
+	font-family: $RobotoRegular
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+
+/* Hide the browser's default checkbox */
+.checkbox-wrapper__checkbox-label input
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+/* Create a custom checkbox */
+.checkmark
+	position: absolute
+	top: 0
+	left: 0
+	height: 25px
+	width: 25px
+	background-color: #fff
+	border: 1px solid #888888
+
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-wrapper__checkbox-label input:checked ~ .checkmark
+	background: url("../img/icons/checked.svg") no-repeat center
+	background-size: 75%
+
+.work
+	margin-top: 50px
+
+.work__heading
+	padding-left: 130px
+	font-size: 30px
+	display: inline-block
+	&::before
+		content: ""
+		position: relative
+		right: 15px
+		bottom: 7px
+		display: inline-block
+		width: 25px
+		height: 2px
+		background-color: #b8b8b8
+
+.work-links
+	float: right
+	width: 25%
+	text-align: center
+	margin-top: 25px
+
+.work-links__item
+	display: inline-block
+	width: 30%
+	color: #2b2b2b
+	text-decoration: none
+
+
+.work-links__item_active
+	color: #3498db
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: #3498db
+
+.record-wrapper
+	width: 100%
+	padding: 0 50px
+
+.record-wrapper__group1, .record-wrapper__group2
+	display: flex
+	justify-content: space-around
+	align-items: stretch
+
+.record__img
+	width: 470px
+	height: 280px
+	background: url('../img/tab_picture.png') no-repeat center
+
+.record__img_hover
+	width: 470px
+	height: 280px
+	position: relative
+	text-align: center
+	color: #fff
+	font-size: 24px
+	line-height: 275px
+	opacity: 0
+	transition: 1s
+	&:hover
+		opacity: 1
+		transition: .5s
+		background: rgba(0, 0, 0, 0.6)
+		cursor: pointer
+
+.record__text
+	font-size: 24px
+	display: inline-block
+	width: 470px
+
+.footer
+	background-color: #eee
+	height: 105px
+
+.footer__text
+	font-family: $RobotoMedium
+	text-align: center
+	font-size: 14px
+	vertical-align: middle
+	line-height: 100px
+
+
+@import "_media" // Всегда в конце

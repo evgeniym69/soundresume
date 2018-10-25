@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>SoundResume</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="libs/Remodal-1.1.1/dist/remodal.css">
+	<link rel="stylesheet" href="libs/Remodal-1.1.1/dist/remodal-default-theme.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Template Basic Images End -->
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<!--<style>@@include('header.min.css')</style>-->
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		//loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<!-- Load Custom CSS Start -->
+	<!--<Deject><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script>--><!--</Deject>-->
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<!--<link rel="stylesheet" href="css/fonts.min.css">-->
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<header class="header">
+		<div class="header__logo">
+			<img src="img/icons/logo.svg" alt="SoundResume logo"> SoundResume
+		</div>
+		<nav class="header__nav">
+			<ul class="header__list">
+				<li class="list-item"><a href="#" class="list-item__link">Главная</a></li>
+				<li class="list-item"><a href="#" class="list-item__link arrow-list">Жанры
+				</a></li>
+				<li class="list-item"><a href="#" class="list-item__link">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="header__phone">
+			<p class="number">+38 (050) 123-22-33</p>
+		</div>
+		<div class="header__facebook">
+			<a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="img/icons/facebook.svg" alt="Facebook"></a>
+		</div>
+	</header>
+
+	<section class="slider-wrapper owl-carousel">
+		<div class="slider">
+			<div class="slider__content">
+				<h1 class="slider__heading">Просто лучшая студия звукозаписи "SoundResume"</h1>
+				<p class="slider__text">У нас индивидуальный подход к каждому клиенту!!! Cкидки в зависимости от объёма заказов.</p>
+				<button class="slider__button" type="button" name="button">Записаться</button>
+			</div>
+		</div>
+
+		<div class="slider">
+			<div class="slider__content">
+				<h1 class="slider__heading">Просто лучшая студия звукозаписи "SoundResume"</h1>
+				<p class="slider__text">У нас индивидуальный подход к каждому клиенту!!! Cкидки в зависимости от объёма заказов.</p>
+				<button class="slider__button" type="button" name="button">Записаться</button>
+			</div>
+		</div>
+
+		<div class="slider">
+			<div class="slider__content">
+				<h1 class="slider__heading">Просто лучшая студия звукозаписи "SoundResume"</h1>
+				<p class="slider__text">У нас индивидуальный подход к каждому клиенту!!! Cкидки в зависимости от объёма заказов.</p>
+				<button class="slider__button" type="button" name="button">Записаться</button>
+			</div>
+		</div>
+
+	</section>
+
+	<main class="content">
+
+		<section class="about">
+			<h2 class="about__header">О нас</h2>
+			<p class="about__text"><a class="about__text_blue" href="#">SoundResume</a> – это студийный комплекс премиум-класса в историческом центре столицы. Мы уже почти 20 лет являемся востребованными профессионалами столичной звукоиндустрии.</p>
+			<p class="about__text">Студия предоставляет полный спектр услуг по производству аудиоконтента. SoundResume – это качественный звук и качественный сервис!</p>
+		</section>
+
+		<section class="subscription">
+			<h2 class="subscription__heading">Рассчитать стоимость записи</h2>
+			<form class="test" href="#modal" method="post">
+
+				<div class="name-form">
+					<p class="name-form__text">Ваше имя</p>
+					<input type="text" class="name-form__input" name="name" placeholder="напр. Федор Омельченко">
+				</div>
+
+				<div class="phone-form">
+					<p class="phone-form__text">Ваш телефон</p>
+					<input class="phone-form__input" type="phone" name="telephone" placeholder="+38(__)-___-__-___">
+				</div>
+
+				<div class="duration-form">
+					<p class="duration-form__text">Длительность</p>
+					<div class="duration-form__rangecontainer">
+						<span id="myRangeValue" class="duration-form__rangecontainer_top-value">0 мин</span>
+	  				<input type="range" min="0" max="10" value="0" class="range-slider" step="0.1" id="myRange">
+					</div>
+				</div>
+
+				<div class="genre-form">
+					<p class="genre-form__text">Музыкальный жанр</p>
+					<div class="wrapper">
+					  <select>
+					    <option value="" selected disabled >Выберите из списка</option>
+				      <option value="popular">Популярное</option>
+				      <option value="rock">Рок</option>
+				      <option value="rap">Рэп</option>
+				      <option value="jaz">Джаз</option>
+					  </select>
+					</div>
+				</div>
+
+
+
+				</div>
+				<div class="common-count">
+					<h3 class="common-count__text">Примерная стоимость: <span id="result" class="common-count__text_result"></span></h3>
+				</div>
+
+				<div class="registration">
+					<a href="#modal" class="registration__button" >Записаться</a>
+					<!-- Input for form<input type="submit" class="registration__button" name="submit" value="Записаться">-->
+				</div>
+			</form>
+
+			<div class="checkbox-wrapper">
+				<label class="checkbox-wrapper__checkbox-label">Присылать много спама
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+			</div>
+
+		</section>
+
+
+
+		<section class="work">
+			<h2 class="work__heading">Последние работы</h2>
+			<div class="work-links">
+				<a href="#modal" class="work-links__item work-links__item_active">Музыка</a>
+				<a href="#" class="work-links__item">Клипы</a>
+			</div>
+
+
+			<div class="record-wrapper">
+
+				<div class="record-wrapper__group1">
+
+					<div class="record__block">
+						<div class="record__img">
+							<p class="record__img_hover">Смотреть</p>
+						</div>
+						<p class="record__text">Запись альбома для GreenDay</p>
+					</div>
+
+					<div class="record__block">
+						<div class="record__img">
+							<p class="record__img_hover">Смотреть</p>
+						</div>
+						<p class="record__text">Запись альбома для GreenDay, заголовок в 2 строки</p>
+					</div>
+				</div>
+
+				<div class="record-wrapper__group2">
+					<div class="record__block">
+						<div class="record__img">
+							<p class="record__img_hover">Смотреть</p>
+						</div>
+						<p class="record__text">Запись альбома для GreenDay</p>
+					</div>
+
+					<div class="record__block">
+						<div class="record__img">
+							<p class="record__img_hover">Смотреть</p>
+						</div>
+						<p class="record__text">Запись альбома для GreenDay</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</main>
+	<div class="footer">
+		<p class="footer__text">2018. SoundResume</p>
+	</div>
+
+<!-- Modal window-->
+	<div class="remodal" data-remodal-id="modal">
+	  <button data-remodal-action="close" class="remodal-close"></button>
+	  	<h1>Спасибо!</h1>
+		  <p>
+				Мы вам скоро перезвоним, ждите нашего звонка
+		  </p>
+	  	<br>
+			<button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+	</div>
+
+	<!-- Optimized loading JS Start -->
+	<script src="libs/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+	<script src="libs/jQueryMaskPlugin/jquery.mask.min.js"></script>
+	<script src="libs/Remodal-1.1.1/dist/remodal.min.js"></script>
+
+	<script src="js/common.js"></script>
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Optimized loading JS End -->
+
+</body>
+</html>
