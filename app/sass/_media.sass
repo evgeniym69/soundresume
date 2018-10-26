@@ -80,7 +80,7 @@
     width: 100%
     margin-top: 20px
 
-  .record-wrapper__group1, .record-wrapper__group2
+  .record-wrapper__group
     flex-direction: column
     align-items: center
 
@@ -95,24 +95,32 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .header__logo
-    width: 100%
+    width: 34%
     text-align: center
     margin-top: 10px
 
   .header__nav
-    width: 55%
+    width: 65%
 
   .header__phone
-    width: 50%
+    width: 100%
+
+  .arrow-list
+  	&:after
+  		left: 12px
+
+  .number
+    margin-top: 0
 
   .header__facebook
     float: none
+    position: absolute
+    top: 0
+    right: 10px
 
   .slider__content
     margin-left: 30px
     padding-top: 80px
-
-
 
   .owl-next
     display: none
@@ -124,10 +132,23 @@
   .phone-form, .genre-form
     margin-left: -16px
 
+  .work-links
+    width: 100%
+    float: none
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 500px)
+  .header__logo
+    width: 100%
+
+  .header__nav
+    width: 100%
+
   .slider__content
     padding-top: 50px
+
+  .slider__heading
+    font-size: 30px
 
   .slider__text
     width: 90%
@@ -150,6 +171,9 @@
   .name-form__input, .phone-form__input, select
     font-size: 14px
 
+  .name-form__input, .phone-form__input, .duration-form__rangecontainer, select
+    width: 290px
+
   .common-count__text
     font-size: 18px
 
@@ -160,24 +184,22 @@
     padding-left: 30px
 
   .work-links
-    width: 100%
-
-  .record-wrapper__group1
-    margin-top: 80px
-    padding-left: 30px
+    width: 70%
+    text-align: left
+    margin-left: 10%
 
   .record__img
-    width: 300px
+    width: 320px
     height: 210px
 
   .record__img_hover
-    width: 300px
+    width: 320px
     height: 210px
     line-height: 200px
 
   .record__text
     font-size: 20px
-    width: 100%
+    width: 300px
 
 
 /* Custom, iPhone Retina */
